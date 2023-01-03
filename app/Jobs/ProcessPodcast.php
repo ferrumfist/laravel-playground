@@ -32,7 +32,7 @@ class ProcessPodcast implements ShouldQueue
     public function handle()
     {
         Str::random(8);
-//        throw new \Exception('Went something wrong');
+        throw new \Exception('Went something wrong');
         $file = sprintf(
             '%s/%s_%s.txt',
             __DIR__,

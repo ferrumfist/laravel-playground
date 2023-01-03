@@ -16,7 +16,6 @@ class Controller extends BaseController
     public function queue(Request $request)
     {
         if ($request->isMethod(Request::METHOD_POST)) {
-//            return response('It was post');
             ProcessPodcast::dispatch();
         }
         return view('queue');

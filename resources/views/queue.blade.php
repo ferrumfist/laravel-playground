@@ -9,8 +9,8 @@
 <body class="antialiased">
 <form method="post">
     @csrf
-    <div style="text-align: center;">
-        <button type="submit">Create queue</button>
+    <div>
+        <button type="submit" value="">Create queue</button>
     </div>
 </form>
 </body>
