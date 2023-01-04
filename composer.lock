@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d858cd71136d6db0547c4e3a3dfe8ac7",
+    "content-hash": "ee75b4ee27beb5862654fbe5d99bdc1a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -532,6 +532,53 @@
                 }
             ],
             "time": "2023-01-02T17:26:14+00:00"
+        },
+        {
+            "name": "ferrumfist/plesk-ext-laravel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ferrumfist/ext-laravel-integration.git",
+                "reference": "fe9f772062d43a1185e9afac362a998ddf6714de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ferrumfist/ext-laravel-integration/zipball/fe9f772062d43a1185e9afac362a998ddf6714de",
+                "reference": "fe9f772062d43a1185e9afac362a998ddf6714de",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=7.0.0",
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "laravel": {
+                    "providers": [
+                        "PleskExtLaravel\\Providers\\ConsoleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PleskExtLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Plesk Laravel Toolkit integration with Laravel applications.",
+            "keywords": [
+                "laravel",
+                "plesk"
+            ],
+            "support": {
+                "source": "https://github.com/ferrumfist/ext-laravel-integration/tree/master"
+            },
+            "time": "2023-01-03T09:01:09+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -7927,7 +7974,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ferrumfist/plesk-ext-laravel": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
