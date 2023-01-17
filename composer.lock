@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee75b4ee27beb5862654fbe5d99bdc1a",
+    "content-hash": "7bff219fe13b86f5a648b36494195d3c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -532,53 +532,6 @@
                 }
             ],
             "time": "2023-01-02T17:26:14+00:00"
-        },
-        {
-            "name": "ferrumfist/plesk-ext-laravel",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ferrumfist/ext-laravel-integration.git",
-                "reference": "ba4fb3a32ac134157ddb396c896899a51baf5273"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ferrumfist/ext-laravel-integration/zipball/ba4fb3a32ac134157ddb396c896899a51baf5273",
-                "reference": "ba4fb3a32ac134157ddb396c896899a51baf5273",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": ">=7.0.0",
-                "php": ">=7.4"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "component": "package",
-                "laravel": {
-                    "providers": [
-                        "PleskExtLaravel\\Providers\\ConsoleServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PleskExtLaravel\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Plesk Laravel Toolkit integration with Laravel applications.",
-            "keywords": [
-                "laravel",
-                "plesk"
-            ],
-            "support": {
-                "source": "https://github.com/ferrumfist/ext-laravel-integration/tree/master"
-            },
-            "time": "2023-01-09T11:56:05+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -2404,6 +2357,53 @@
                 }
             ],
             "time": "2022-07-30T15:51:26+00:00"
+        },
+        {
+            "name": "plesk/ext-laravel-integration",
+            "version": "v7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plesk/ext-laravel-integration.git",
+                "reference": "c32fd67e0520d6dee49a4a090a9348692100214e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plesk/ext-laravel-integration/zipball/c32fd67e0520d6dee49a4a090a9348692100214e",
+                "reference": "c32fd67e0520d6dee49a4a090a9348692100214e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=7.0.0",
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "laravel": {
+                    "providers": [
+                        "PleskExtLaravel\\Providers\\ConsoleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PleskExtLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Plesk Laravel Toolkit integration with Laravel applications.",
+            "keywords": [
+                "laravel",
+                "plesk"
+            ],
+            "support": {
+                "issues": "https://github.com/plesk/ext-laravel-integration/issues",
+                "source": "https://github.com/plesk/ext-laravel-integration/tree/v7.0.0"
+            },
+            "time": "2023-01-16T13:19:03+00:00"
         },
         {
             "name": "psr/container",
@@ -7974,9 +7974,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "ferrumfist/plesk-ext-laravel": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
