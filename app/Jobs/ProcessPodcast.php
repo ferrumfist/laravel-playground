@@ -31,14 +31,6 @@ class ProcessPodcast implements ShouldQueue
      */
     public function handle()
     {
-        Str::random(8);
-        throw new \Exception('Went something wrong');
-        $file = sprintf(
-            '%s/%s_%s.txt',
-            __DIR__,
-            time(),
-            Str::random(8),
-        );
-        file_put_contents($file, '');
+        file_put_contents(__DIR__.'/job.txt', 'Test1'."\n", FILE_APPEND);
     }
 }
