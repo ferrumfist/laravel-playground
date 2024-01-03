@@ -31,6 +31,6 @@ class ProcessPodcast implements ShouldQueue
      */
     public function handle()
     {
-        file_put_contents(__DIR__.'/job.txt', 'Test1'."\n", FILE_APPEND);
+        file_put_contents(__DIR__.'/job.txt', 'Test2'."\n", FILE_APPEND);
     }
 }
