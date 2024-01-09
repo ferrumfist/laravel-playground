@@ -11,7 +11,8 @@
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "plesk/ext-laravel-integration": "^7.0"
+        "plesk/ext-laravel-integration": "^7.0",
+        "ext-posix": "*"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",

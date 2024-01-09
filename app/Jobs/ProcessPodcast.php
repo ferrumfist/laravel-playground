@@ -31,6 +31,7 @@ class ProcessPodcast implements ShouldQueue
      */
     public function handle()
     {
-        file_put_contents(__DIR__.'/job.txt', 'Test3'."\n", FILE_APPEND);
+        $pid = posix_getpid();
+        file_put_contents(__DIR__.'/job.txt', "PID: $pid\n", FILE_APPEND);
     }
 }
