@@ -30,6 +30,7 @@ class SendMail implements ShouldQueue
      */
     public function handle()
     {
+        sleep(1);
         $pid = posix_getpid();
         file_put_contents(__DIR__.'/mail.txt', "PID: $pid\n", FILE_APPEND);
     }
