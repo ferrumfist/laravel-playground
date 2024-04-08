@@ -8,9 +8,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Str;
 
-class ProcessPodcast implements ShouldQueue
+class DoCalc implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
@@ -32,6 +31,6 @@ class ProcessPodcast implements ShouldQueue
     public function handle()
     {
         $pid = posix_getpid();
-        file_put_contents(__DIR__.'/job.txt', "PID: $pid\n", FILE_APPEND);
+        file_put_contents(__DIR__.'/doCalc.txt', "PID: $pid\n", FILE_APPEND);
     }
 }

@@ -2,25 +2,25 @@
 
 namespace App\Console\Commands;
 
-use App\Jobs\ProcessPodcast;
+use App\Jobs\DoCalc as DoCalcJob;
 use Illuminate\Console\Command;
 
-class MyCommand extends Command
+class DoCalc extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'my-command
-    {--count=10 : Count of jobs}';
+    protected $signature = 'do-calc
+    {--count=10 : Count of mail}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command for test execution';
+    protected $description = 'Command description';
 
     /**
      * Execute the console command.
@@ -37,7 +37,7 @@ class MyCommand extends Command
         }
 
         while ($count--) {
-            ProcessPodcast::dispatch();
+            DoCalcJob::dispatch()->onQueue('calc');
         }
 
         return Command::SUCCESS;
